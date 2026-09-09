@@ -1,7 +1,7 @@
 import { Head } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { dashboard } from '@/routes';
-import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function Index() {
     return (
@@ -11,6 +11,22 @@ export default function Index() {
                 <CardHeader>
                     <CardTitle>Constancias</CardTitle>
                 </CardHeader>
+                <CardContent>
+                    <div className='grid gap-6'>
+                        <div className='grid gap-2'>
+                            <p>Código</p>
+                            <p className='font-medium'>7379</p>
+                        </div>
+                        <div className='grid gap-2'>
+                            <p>Nombre</p>
+                            <p className='font-medium'>Pablo Alberto</p>
+
+                            <p>Nombre</p>
+                            <p className='font-medium'>Pablo Alberto</p>
+                        </div>
+                    </div>
+                    
+                </CardContent>
             </Card>
         </>    
     );
